@@ -8,11 +8,11 @@ const models = {}
 module.exports = () => {
   const sequelize = (schema = 'shared') => new Sequelize({
     database: schema,
-    username: 'username',
-    password: 'password',
-    dialect: 'mysql',
+    username: 'postgres',
+    password: 'postgres',
+    dialect: 'postgres',
     host: "localhost",
-    port: 3306,
+    port: 5432,
   })
 
 
